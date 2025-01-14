@@ -1,0 +1,36 @@
+├── index.html
+├── manifest.json
+├── package-lock.json
+├── package.json
+├── README.md
+├── src
+│  ├── figma
+│  │  └── code.ts
+│  └── ui
+│    ├── app.css
+│    ├── components
+│    │  ├── button.svelte
+│    │  └── input.svelte
+│    ├── lib
+│    │  └── App.svelte
+│    ├── main.ts
+│    └── vite-env.d.ts
+├── srcbu
+│  ├── app.css
+│  ├── App.svelte
+│  ├── assets
+│  │  └── svelte.svg
+│  ├── components
+│  │  ├── button.svelte
+│  │  ├── input
+│  │  └── input.svelte
+│  ├── lib
+│  │  └── Counter.svelte
+│  ├── main.ts
+│  └── vite-env.d.ts
+├── svelte.config.js
+├── tsconfig.app.json
+├── tsconfig.figma.json
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts

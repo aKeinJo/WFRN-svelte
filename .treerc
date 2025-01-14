@@ -1,0 +1,6 @@
+[default]
+ignore =
+    .vscode
+    .treerc
+    .gitignore
+    node_modules

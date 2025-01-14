@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "lib": ["ES2022"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noEmit": false,
+    "outDir": "../dist/figma",
+    "rootDir": "../src/figma",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "composite": true,
+    "types": ["@figma/plugin-typings"]
+  },
+  "include": ["../src/figma/**/*.ts"],
+  "exclude": ["../node_modules"]
+}
