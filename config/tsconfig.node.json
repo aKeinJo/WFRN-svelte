@@ -22,5 +22,9 @@
     "composite": true, // 프로젝트 참조를 위해 추가
     "emitDeclarationOnly": true // 타입 선언 파일만 생성
   },
-  "include": ["../vite.config.ts"]
+  "include": [
+    "../vite.config.ts",
+    "../figma.manifest.ts",
+    "../config/includeHtml.ts"
+  ]
 }

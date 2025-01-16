@@ -1,0 +1,171 @@
+/* Vars */
+:root {
+  /* COLORS */
+
+  /* Black */
+  --Black-100: rgba(12,12,13,0.1);
+  --Black-200: rgba(12,12,13,0.2);
+  --Black-300: rgba(12,12,13,0.3);
+  --Black-400: rgba(12,12,13,0.4);
+  --Black-500: rgba(12,12,13,0.5);
+  --Black-600: rgba(12,12,13,0.6);
+  --Black-700: rgba(12,12,13,0.7);
+  --Black-800: rgba(12,12,13,0.8);
+  --Black-900: rgba(12,12,13,0.9);
+  --Black-1000: #0C0C0D;
+
+  /* Brand */
+  --Brand: var(--Brand-600);
+  --Brand-050: #EDF9FF;
+  --Brand-100: #D7F1FF;
+  --Brand-200: #B9E8FF;
+  --Brand-300: #88DBFF;
+  --Brand-400: #50C5FF;
+  --Brand-500: #28A7FF;
+  --Brand-600: #1E90FF;
+  --Brand-700: #0A71EB;
+  --Brand-800: #0F5ABE;
+  --Brand-900: #134E95;
+  --Brand-1000: #11305A;
+
+  /* Gray */
+  --Gray-100: #EFEFEF;
+  --Gray-200: #DCDCDC;
+  --Gray-300: #BDBDBD;
+  --Gray-400: #989898;
+  --Gray-500: #7C7C7C;
+  --Gray-600: #656565;
+  --Gray-700: #525252;
+  --Gray-800: #464646;
+  --Gray-900: #3D3D3D;
+  --Gray-1000: #111111;
+
+  /* Green */
+  --Green: var(--green-500);
+  --Green-100: #EBFFEE;
+  --Green-200: #CFF7D3;
+  --Green-300: #AFF4C6;
+  --Green-400: #85E0A3;
+  --Green-500: #14AE5C;
+  --Green-600: #009951;
+  --Green-700: #008043;
+  --Green-800: #02542D;
+  --Green-900: #024023;
+  --Green-1000: #062D1B;
+
+  /* Pink */
+  --Pink: var(--Pink-400);
+  --Pink-100: #FCF1FD;
+  --Pink-200: #FAE1FA;
+  --Pink-300: #F5C0EF;
+  --Pink-400: #F19EDC;
+  --Pink-500: #EA3FB8;
+  --Pink-600: #D732A8;
+  --Pink-700: #BA2A92;
+  --Pink-800: #8A226F;
+  --Pink-900: #57184A;
+  --Pink-1000: #3F1536;
+
+  /* Red */
+  --Red: var(--Red-500);
+  --Red-100: #FEE9E7;
+  --Red-200: #FDD3D0;
+  --Red-300: #FCB3AD;
+  --Red-400: #F4776A;
+  --Red-500: #EC221F;
+  --Red-600: #C00F0C;
+  --Red-700: #900B09;
+  --Red-800: #690807;
+  --Red-900: #4D0B0A;
+  --Red-1000: #300603;
+
+  /* White */
+  --White: var(--White-1000);
+  --White-100: rgba(255,255,255,0.05);
+  --White-200: rgba(255,255,255,0.1);
+  --White-300: rgba(255,255,255,0.2);
+  --White-400: rgba(255,255,255,0.4);
+  --White-500: rgba(255,255,255,0.7);
+  --White-600: rgba(255,255,255,0.8);
+  --White-700: rgba(255,255,255,0.85);
+  --White-800: rgba(255,255,255,0.9);
+  --White-900: rgba(255,255,255,0.95);
+  --White-1000: #FFFFFF;
+
+  /* Yellow */
+  --Yellow: var(--Yellow-400);
+  --Yellow-100: #FFFBEB;
+  --Yellow-200: #FFF1C2;
+  --Yellow-300: #FFE8A3;
+  --Yellow-400: #E8B931;
+  --Yellow-500: #E5A000;
+  --Yellow-600: #BF6A02;
+  --Yellow-700: #975102;
+  --Yellow-800: #682D03;
+  --Yellow-900: #522504;
+  --Yellow-1000: #401B01
+
+  --
+
+  /* TYPOGRAPHY */
+  /* Pos = positive applications (black on white) */
+  /* Neg = negative applications (white on black) */
+
+  /* Font family */
+  --font-family: 'Inter', sans-serif;
+
+  /* Font sizes */
+  --font-size-xsmall: 8px;
+  --font-size-small: 11px;
+  --font-size-medium: 12px;
+  --font-size-large: 14px;
+  --font-size-xlarge: 16px;
+
+  /* Font weights */
+  --font-weight-thin: 100;
+  --font-weight-light: 300
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Lineheight */
+  --font-line-height: 16px;
+  /* Use For xsmall, small font sizes */
+  --font-line-height-large: 24px;
+  /* Use For large, xlarge font sizes */
+
+  /* Letterspacing */
+  --font-letter-spacing-pos-xsmall: .005em;
+  --font-letter-spacing-neg-xsmall: .01em;
+  --font-letter-spacing-pos-small: 0;
+  --font-letter-spacing-neg-small: .005em;
+  --font-letter-spacing-pos-large: -.0025em;
+  --font-letter-spacing-neg-large: .0025em;
+  --font-letter-spacing-pos-xlarge: -.001em;
+  --font-letter-spacing-neg-xlarge: -.001em;
+
+
+  /* BORDER RADIUS */
+  --border-radius-xsmall: 2px;
+  --border-radius-small: 4px;
+  --border-radius-medium: 8px;
+  --border-radius-large: 16px;
+  --border-radius-full: 1000px;
+
+
+  /* SHADOWS */
+  --shadow-hud: 0 5px 17px rgba(0, 0, 0, .2), 0 2px 7px rgba(0, 0, 0, .15);
+  --shadow-floating-window: 0 2px 14px rgba(0, 0, 0, .15);
+
+
+  /* SPACING + SIZING */
+  --size-050: 2px;
+  --size-100: 4px;
+  --size-150: 6px;
+  --size-200: 8px;
+  --size-300: 12px;
+  --size-400: 16px;
+  --size-600: 24px;
+  --size-800: 32px;
+  --size-1200: 48px;
+}

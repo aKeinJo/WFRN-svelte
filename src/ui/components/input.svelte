@@ -10,6 +10,8 @@
     export let placeholder = 'Input something here...';
     export { className as class };
 
+    let className = '';
+
 </script>
 
 <input
@@ -24,7 +26,7 @@
     {name}
     {disabled}
     {placeholder}
-    class="indent"
+    class={[className].join(' ')}
     class:borders={borders}
     class:invalid={invalid}
 >

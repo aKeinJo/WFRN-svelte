@@ -1,35 +1,39 @@
-import path from "node:path";
-import { defineConfig } from "vite";
-import generateFile from "vite-plugin-generate-file";
-import { viteSingleFile } from "vite-plugin-singlefile";
-import figmaManifest from "./figma.manifest";
+import path from 'path';
+import { defineConfig } from 'vite';
+import { viteSingleFile } from 'vite-plugin-singlefile';
 
-export default defineConfig(({ mode }) => ({
-  plugins: [
-    viteSingleFile(),
-    generateFile({
-      type: "json",
-      output: "./manifest.json",
-      data: figmaManifest,
-    }),
-  ],
-  build: {
-    minify: mode === 'production',
-    sourcemap: mode !== 'production' ? 'inline' : false,
-    target: 'es2022',
-    emptyOutDir: false,
-    outDir: path.resolve("dist"),
-    rollupOptions: {
-      input: path.resolve('src/plugin/plugin.ts'),
-      output: {
-        entryFileNames: 'plugin.js',
-      },
-    },
-  },
-  resolve: {
-    alias: {
-      "@common": path.resolve("src/common"),
-      "@plugin": path.resolve("src/plugin"),
-    },
-  },
-}));
+import figmaManifest from './figma.manifest';
+import writeFigmaManifest from './scripts/write-figma-manifest';
+
+// https://vitejs.dev/config/
+export default defineConfig(({ mode }) => {
+	const dev = mode === 'development';
+	return {
+		plugins: [viteSingleFile(), writeFigmaManifest()],
+		build: {
+			minify: !dev,
+			sourcemap: dev,
+			lib: {
+				name: figmaManifest.name,
+				entry: path.resolve(__dirname, './src/plugin/plugin.ts'),
+				fileName: 'plugin',
+				formats: ['es'],
+			},
+			rollupOptions: {
+				output: {
+					entryFileNames: 'plugin.js',
+					extend: true,
+				},
+			},
+			emptyOutDir: false,
+			outDir: path.resolve(__dirname, './dist'),
+		},
+		resolve: {
+			alias: {
+				$common: path.resolve(__dirname, './src/common'),
+				$ui: path.resolve(__dirname, './src/ui'),
+				$plugin: path.resolve(__dirname, './src/plugin'),
+			},
+		},
+	};
+});

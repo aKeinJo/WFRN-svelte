@@ -1,9 +1,22 @@
+├── config
+│  ├── tsconfig.app.json
+│  ├── tsconfig.figma.json
+│  ├── tsconfig.json
+│  └── tsconfig.node.json
+├── dist
+│  ├── html.js
+│  ├── index.html
+│  ├── manifest.json
+│  ├── plugin.js
+│  ├── ui.css
+│  └── ui.js
+├── figma.manifest.ts
 ├── index.html
-├── manifest.json
 ├── package-lock.json
 ├── package.json
 ├── README.md
 ├── src
+│  ├── common
 │  ├── figma
 │  │  └── code.ts
 │  └── ui
@@ -15,22 +28,7 @@
 │    │  └── App.svelte
 │    ├── main.ts
 │    └── vite-env.d.ts
-├── srcbu
-│  ├── app.css
-│  ├── App.svelte
-│  ├── assets
-│  │  └── svelte.svg
-│  ├── components
-│  │  ├── button.svelte
-│  │  ├── input
-│  │  └── input.svelte
-│  ├── lib
-│  │  └── Counter.svelte
-│  ├── main.ts
-│  └── vite-env.d.ts
 ├── svelte.config.js
-├── tsconfig.app.json
-├── tsconfig.figma.json
-├── tsconfig.json
-├── tsconfig.node.json
-└── vite.config.ts
+├── vite.config.plugin.ts
+├── vite.config.ts
+└── vite.config.ui.ts

@@ -12,7 +12,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "composite": true,
-    "types": ["@figma/plugin-typings"]
+    "types": ["@figma/plugin-typings","./globals"]
   },
   "include": ["../src/figma/**/*.ts"],
   "exclude": ["../node_modules"]
