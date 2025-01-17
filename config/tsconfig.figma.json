@@ -14,6 +14,6 @@
     "composite": true,
     "types": ["@figma/plugin-typings","./globals"]
   },
-  "include": ["../src/figma/**/*.ts"],
+  "include": ["../src/plugin/**/*.ts"],
   "exclude": ["../node_modules"]
 }
